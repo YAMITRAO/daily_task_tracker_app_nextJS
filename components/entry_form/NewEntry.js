@@ -15,15 +15,15 @@ const NewEntry = () => {
         let taskDate = new Date();
         console.log(enteredTask,enteredDesc, taskDate);
 
-       const response =  await fetch("/api/new-entry", {
+       const response =  await fetch("/api/allpost", {
             method:"POST",
             body:JSON.stringify(
                 {
                     title:enteredTask,
+                    label:"todaytask",
                     description:enteredDesc,
                     taskDate: taskDate,
                   }
-                
             ),
             headers:{
                 'Content-type':"application/json"

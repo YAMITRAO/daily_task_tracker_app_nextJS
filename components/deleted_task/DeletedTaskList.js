@@ -7,7 +7,8 @@ const DeletedTaskList = (props) => {
         <div className={style.task}> Deleted Task</div>
         {props.data.map( (val) =>{
           return (
-            <TaskCard 
+            <TaskCard
+            key={val.id} 
         isToday = {false}
         isDeleted = {true}
         isCompleted = {false}
