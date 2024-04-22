@@ -1,0 +1,53 @@
+.container{
+    height: 70px;
+    width: 100%;
+    background-color: #356c82;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    font-size: 18px;
+    color: white;
+}
+
+.navLink{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:2rem;
+}
+
+.logo, .addTask{
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 8px 18px;
+    border-radius: 8px;
+    background-color: #bc7809;
+}
+
+.navLink >li{
+    text-decoration: none;
+    list-style: none;
+    padding:8px 12px;
+    border-radius: 8px;
+    background-color: #42a0c5;
+    font-family: monospace;
+    font-weight: bold;
+}
+.navLink >li:hover{
+    scale: 1.02;
+    background-color: #47afd7;
+}
+
+.addTask{
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(132, 187, 50);
+    cursor: pointer;
+}
+
+.addTask:hover{
+    scale: 1.02;
+}

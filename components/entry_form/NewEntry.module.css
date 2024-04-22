@@ -1,0 +1,70 @@
+.container{
+    width:100%;
+    background-color: white;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > form {
+    border-radius: 8px;
+    padding: 0px 20px 20px 20px;
+    width: 40%;
+    background-color: #cceaed;
+}
+
+.title{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: 26px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgb(32, 158, 172);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.taskentry, .taskDesc{
+display: flex;
+flex-direction: column;
+}
+
+.taskentry > input, .taskDesc> input{
+    font-size: 16px;
+    font-family: monospace;
+    height:36px;
+    width:100%;
+    border-radius: 8px;
+    border: 2px solid gray;
+    text-indent: 4px;
+    margin-bottom: 10px;
+   
+}
+
+.taskentry >label , .taskDesc >label {
+    font-size: 22px;
+    font-family: monospace;
+    padding-left: 1px;
+    margin-bottom: 2px;
+    color: #4e4f50;
+}
+
+.addButton{
+    font-size: 18px;
+    font-family: monospace;
+    padding: 8px 0px;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(45, 190, 216);
+    cursor: pointer;
+    color: white;
+}
+.addButton:hover{
+    scale: 1.01;
+    background-color: rgb(43, 177, 200);
+
+}
