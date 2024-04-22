@@ -1,10 +1,17 @@
 
 import NewEntry from '@/components/entry_form/NewEntry';
-import React from 'react'
+import Head from 'next/head';
 
 const newentry = () => {
   return (
+    <>
+     <Head>
+      <title>Add Your Task</title>
+      <meta name="description" content="Add new task here "/>
+    </Head>
     <NewEntry/>
+    </>
+    
   )
 }
 
